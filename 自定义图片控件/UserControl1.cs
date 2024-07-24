@@ -40,7 +40,6 @@ namespace 自定义图片控件
                 // 缩小
                 scaleFactor /= 1.1f;
             }
-
             //触发重绘事件，更新缩放图像
             pictureBox1.Invalidate();
         }
