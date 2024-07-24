@@ -98,5 +98,11 @@ namespace 自定义图片控件
             //在指定的位置 (imageOffset.X, imageOffset.Y) 绘制图像 originalImage，并将其缩放到指定的宽度 (newWidth) 和高度 (newHeight)
             e.Graphics.DrawImage(originalImage, imageOffset.X, imageOffset.Y, newWidth, newHeight);
         }
+
+
+        public void xx()
+        {
+            Console.WriteLine("哈哈哈");
+        }
     }
 }
