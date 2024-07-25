@@ -54,6 +54,15 @@ namespace 自定义图片控件
             }
         }
 
+        private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
+        {
+            // MouseUp事件处理程序，当鼠标左键松开时，设置isDragging为false，停止拖拽
+            if (e.Button == MouseButtons.Left)
+            {
+                isDragging = false;
+            }
+        }
+
         // 在拖拽时计算鼠标位置的变化量并更新图像的偏移量，然后触发重绘事件。
         private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
         {
@@ -75,15 +84,6 @@ namespace 自定义图片控件
             }
         }
 
-        private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
-        {
-            // MouseUp事件处理程序，当鼠标左键松开时，设置isDragging为false，停止拖拽
-            if (e.Button == MouseButtons.Left)
-            {
-                isDragging = false;
-            }
-        }
-
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
             if (originalImage == null)
@@ -97,12 +97,6 @@ namespace 自定义图片控件
             e.Graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
             //在指定的位置 (imageOffset.X, imageOffset.Y) 绘制图像 originalImage，并将其缩放到指定的宽度 (newWidth) 和高度 (newHeight)
             e.Graphics.DrawImage(originalImage, imageOffset.X, imageOffset.Y, newWidth, newHeight);
-        }
-
-
-        public void xx()
-        {
-            Console.WriteLine("哈哈哈");
         }
     }
 }

@@ -36,7 +36,7 @@
             this.userControl11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.userControl11.Location = new System.Drawing.Point(104, 73);
             this.userControl11.Name = "userControl11";
-            this.userControl11.Size = new System.Drawing.Size(527, 551);
+            this.userControl11.Size = new System.Drawing.Size(298, 274);
             this.userControl11.TabIndex = 0;
             // 
             // Form1
