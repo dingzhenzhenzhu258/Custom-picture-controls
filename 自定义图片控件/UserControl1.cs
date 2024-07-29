@@ -54,6 +54,15 @@ namespace 自定义图片控件
             }
         }
 
+        private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
+        {
+            // MouseUp事件处理程序，当鼠标左键松开时，设置isDragging为false，停止拖拽
+            if (e.Button == MouseButtons.Left)
+            {
+                isDragging = false;
+            }
+        }
+
         // 在拖拽时计算鼠标位置的变化量并更新图像的偏移量，然后触发重绘事件。
         private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
         {
@@ -72,15 +81,6 @@ namespace 自定义图片控件
 
                 //触发重绘事件，实时更新图像位置
                 pictureBox1.Invalidate();
-            }
-        }
-
-        private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
-        {
-            // MouseUp事件处理程序，当鼠标左键松开时，设置isDragging为false，停止拖拽
-            if (e.Button == MouseButtons.Left)
-            {
-                isDragging = false;
             }
         }
 

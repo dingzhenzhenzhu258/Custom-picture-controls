@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/自定义图片控件/UserControl2.cs
+/自定义图片控件/UserControl2.Designer.cs
+/自定义图片控件/UserControl2.resx
