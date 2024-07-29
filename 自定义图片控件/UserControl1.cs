@@ -92,6 +92,9 @@ namespace 自定义图片控件
             int newWidth = (int)(originalImage.Width * scaleFactor);
             int newHeight = (int)(originalImage.Height * scaleFactor);
 
+
+            // 使用Graphics重新绘制图像
+
             //在PictureBox中显示包含偏移的图像
             e.Graphics.Clear(Color.White);
             e.Graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
